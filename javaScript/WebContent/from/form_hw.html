@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="page.jsp" method="get">
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <p>이름 : <input type="text" name="name" size="10"></p>
+            <p>학번 : <input type="text" name="snum" size="10"></p>
+            <p>학과 : <input type="text" name="major"></p>
+            <p></p>
+        </fieldset>
+        <fieldset>
+            <p>ID : <input type="text" name="id" size="15" required></p>
+            <p>pw : <input type="password" name="psw" size="10" required></p>
+            <p></p>
+        </fieldset>
+        <textarea name="text" id="" cols="30" rows="10">텍스트를 입력하세요</textarea>
+        <fieldset>
+            <legend>라디오 양식 만들기</legend>
+            <h3>당신의 성별은 무엇입니까</h3>
+            <input type="radio" name="sex" value="male" checked> 남자
+            <input type="radio" name="sex" value="female"> 여자
+            <p></p>
+            <h3>당신의 몇 학년입니까</h3>
+            <input type="radio" name="year" value="1" checked> 1학년
+            <input type="radio" name="year" value="2"> 2학년
+            <input type="radio" name="year" value="3"> 3학년
+            <input type="radio" name="year" value="4"> 4학년
+            <p></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>체크박스 양식 만들기</legend>
+            <h3>현제 관심을 가지고 있는 학습 주제는 무엇입니까</h3>
+            <input type="checkbox" name="subject" value="html5" checked>html5<br>
+            <input type="checkbox" name="subject" value="css3">css3<br>
+            <input type="checkbox" name="subject" value="javascript">javascript
+            <p></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>button 양식 만들기</legend>
+            <h3>button 태그 사용</h3>
+            <button type="button" onclick="alert('클릭-1 사용')">클릭-1</button>
+            <h3>input 태그 사용</h3>
+            <input type="button" onclick="alert('클릭-2 사용')" value="클릭-2">
+            <h3>image 버튼 사용</h3>
+            <button type="button" onclick="alert('클릭-3 사용')">
+                <img src="button.jpg">
+            </button>
+            <p></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>선택 목록 양식 만들기</legend>
+            <h3>관심있는 학습 주제 한 가지를 선택</h3>
+            <select name="subjects">
+                <option value="1" selected>html5</option>
+                <option value="2">css3</option>
+                <option value="3">javascript</option>
+                <option value="4">jquery</option>
+            </select>
+            <p></p>
+            <h3>관심있는 학습 주제를 모두 선택</h3>
+            <select name="subjects2" size="4" multiple>
+                <option value="1" selected>html5</option>
+                <option value="2">css3</option>
+                <option value="3">javascript</option>
+                <option value="4">jquery</option>
+            </select>
+            <p></p>
+            <h3>그룹별 선택 항목을 제공합니다.</h3>
+            <select name="major2">
+                <optgroup label="computer">  
+                    <option>software</option>
+                    <option>robot</option>
+                    <option>system</option>            
+                </optgroup>
+                <optgroup label="language">  
+                    <option>Korea</option>
+                    <option>english</option>
+                    <option>china</option>            
+                </optgroup>
+                <optgroup label="business">  
+                    <option>service</option>
+                    <option>education</option>
+                    <option>communication</option>            
+                </optgroup>
+                <p></p>
+            </select>
+            <input type="text" list="majorlist" name="major3">
+                <datalist id="majorlist">
+                    <option value="software">소프트웨어</option>
+                    <option value="robot">로봇</option>
+                    <option value="system">시스템</option>
+                </datalist> 
+
+        </fieldset>
+        <fieldset>
+            <legend>날짜와 시간 양식</legend>
+            <h3>오늘 날짜 입력</h3>
+            today: <input type="date" name="today">
+
+            <h3>프로젝트 수행 기간</h3>
+            from : <input type="date" name="from" min="2016-03-01" max="2016-12-31">
+            to : <input type="date" name="to" min="2018-03-01" max="2018-06-30">
+
+            <h3>생일(년/월) 입력</h3>
+            생일 : <input type="month" name="birth">
+            <h3>주간 계획(년/주) 입력</h3>
+            주간 계획 : <input type="week" name="weekeend">
+
+            <h3>현재 시간 입력</h3>
+            time: <input type="time" name="now">
+            <h3>생일 입력</h3>
+            birthday : <input type="datetime-local" name="bdaytime">
+        </fieldset>
+
+        <fieldset>
+            <legend>색상 선택/숫자 입력/범위 지정양식</legend>
+            <h3>색상 선택 양식 만들기</h3>
+            <input type="color" name="color_value" value="#0000ff">
+
+            <h3>숫자입력 양식 만들기</h3>
+            나이 : <input type="number" name="count" min="1" max="130">
+
+            <h3>범위 지정 양식 만들기</h3>
+            생일 : <input type="month" name="birth">
+            <h3>주간 계획(년/주) 입력</h3>
+            주간 계획 : <input type="week" name="weekeend">
+
+            <h3>현재 시간 입력</h3>
+            time: <input type="time" name="now">
+            <h3>생일 입력</h3>
+            birthday : <input type="datetime-local" name="bdaytime">
+        </fieldset>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="취소"">
+    </form>
+</body>
+</html>

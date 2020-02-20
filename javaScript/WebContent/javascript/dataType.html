@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataType.html</title>
+</head>
+
+<body>
+    값입력 : <input type="text" name="" id="ipt"><br>
+    <button id="btn">구구단 출력</button>
+    <button id="btn" onclick="gugudan(6)">구구단 출력</button>
+    <br>
+    <script>
+        var btn = document.getElementById("btn");
+        console.log(btn);
+        btn.onclick = function(){
+            console.log("버튼클릭했슴둥");
+            var inputValue = document.getElementById("ipt").value;
+            gugudan(inputValue);
+        }
+        
+        //gugudan(5);
+        function gugudan(arg){
+            for(var i = 1; i < 10; i++){
+            document.write(arg + "*" + i + "=" + (arg*i) + "<br>");
+            }    
+        }
+        var dan = 4;
+        for(var i = 1; i < 10; i++){
+            document.write(dan + "*" + i + "=" + (dan*i) + "<br>");
+        }
+
+        var firstName = "scott";
+        document.write(firstName + "<br>");
+
+        firstName = 10;
+        document.write(firstName + "<br>");
+
+        firstName = [13, 23, 345, 25]
+        document.write(firstName + "<br>");
+        
+        for (var i = 0; i < firstName.length; i++){
+            console.log(i, firstName[i]);
+        }
+        
+        firstName = ["a", "b", "c", "d"]
+
+        for(idx in firstName){
+            console.log(firstName[idx]);
+        }
+
+        var lastName = "trger";
+        console.log(lastName);
+    </script>
+</body>
+
+</html>

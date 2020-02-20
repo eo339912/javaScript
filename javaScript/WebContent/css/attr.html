@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr</title>
+    <style>
+        input{
+            border:0;
+        }
+        input[type='text']{
+            background-color:bisque;
+           
+        }
+        input[name ^= 'my']{
+            background-color:blue;
+           
+        }
+    </style>
+</head>
+<body>
+    <form action="member.jsp" method="post">
+        <input type="text" name="myName">
+        <input type="password" name="myPass">
+        <input type="date" name="birth">
+        <input type="submit" value="OK">
+    </form>
+</body>
+</html>

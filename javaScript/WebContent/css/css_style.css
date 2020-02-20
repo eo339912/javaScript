@@ -1,0 +1,35 @@
+table{
+    font-size:20px;
+    margin:0; padding:0;
+    border-collapse:collapse;
+}
+table tr td{
+    border:1px solid #ddd;
+    
+}
+tr, td{margin:0; padding:0;}
+
+ul{
+    overflow:hidden;
+}
+ul li {
+    font-size:32px;
+    list-style:none;
+    float:left;
+    width:350px;
+    text-align:center;
+}
+ul li:nth-child(1){
+    background-color: thistle;
+}
+ul li:nth-child(2){
+    background-color:#e26c6c;
+}
+ul li:nth-child(3){
+    background-color: thistle;
+}
+
+table{
+    width:500px;
+}
+

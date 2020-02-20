@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="member.jsp" method="get">
+        <p>이름 : <input type="text" name="name" size="10"></p>
+        <p>ID : <input type="text" name="id" size="15" required></p>
+        <p>pw : <input type="password" name="psw" size="10" required></p>
+        <p></p>
+        <h3>전공</h3>
+        <select name="major">
+            <option value="java" selected>자바</option>
+            <option value="oracle">오라클</option>
+            <option value="javascript">자바스크립트</option>
+        </select>
+        <p></p>
+        <h3>성별</h3>
+        <input type="radio" name="sex" value="male" checked> 남자
+        <input type="radio" name="sex" value="female"> 여자
+        <p></p>
+        <input type="submit" value="전송">
+        <input type="reset" value="취소"">
+           
+    </form>
+</body>
+</html>
