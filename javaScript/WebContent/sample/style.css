@@ -1,0 +1,14 @@
+body{background-color:#eee;}
+#container{background-color:#fff; width:80%; height:auto; position:relative; margin:0 auto;}
+#header{background-color:hsl(60, 58%, 70%);width:100%; height:300px; text-align:center;}
+#header h1{line-height:300px; font-weight:bold;}
+#content{width:100%; overflow:hidden;}
+#content #nav{width:30%; float:left;  padding:15px; box-sizing: border-box;}
+#content #nav ul li{margin:10px 0;}
+#content #nav ul li a{font-weight:normal;}
+#content #nav ul li a:visited{color:red;}
+#content #nav ul li a:active{color:blue;}
+#content #nav ul li a:hover{color:green;}
+#content #nav ul li.selected a{font-weight:bold;}
+#content #main{width:70%; float:left;  padding:15px; box-sizing: border-box;}
+#footer{background-color:#ddd; width:100%; height:100px; padding:15px; box-sizing: border-box; text-align:right;}
